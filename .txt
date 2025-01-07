@@ -200,8 +200,8 @@ A form is created using the <form> which often contains input fields like text b
 Syntax: 
 
 <form>
-<label for="Name">Name:</label>
-<input type: "text" id= "name" name= "name"
+<label for="name">Name:</label>
+<input type= "text" id= "name" name= "name" />
 
 <input type= "submit" value="submit">
 </form>
