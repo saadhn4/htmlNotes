@@ -1,0 +1,217 @@
+How Internet works on browser level?
+
+Understanding how the inter works om a browser level involves multiple steps, from entering a URL in the browser to the website being deployed. Process-
+
+1. Entering the URL
+
+When yoy type a URL into your browsers address bar and press enter, the browser begins the process of fetching the webpage
+
+2. DNS Lookup
+
+The browser needs to find the IP address of the server hostig the website. To do this, it queries a DNS (Domain Name System)
+
+DNS translates the human readable domain (www.google.com) into an IP address (142.250.190.46)
+
+3. Establishing a connection
+
+Once the IP address is resolved, the browser establishes a connection with the server
+
+- The browser sends a requst to the IP address over the TCP/IP protocol
+- The connection uses HTTPS (secure) or HTTP (insecure), ensuring data is encrypted when using HTTPS 
+
+4. Requesting the webpage
+
+After the connection is established, the browser sends an HTTP/HTTPS requst to the server.
+The request typicially includes:
+
+- The requested resource (eg. /index.html)
+- Headers with metadata(eg. browser type, cookies)
+-HTTP methods like GET, POST
+
+5. Server processes the Request:
+
+The server receives the request and:
+
+- Looks for the requested resource (eg. file or data from database)
+- Executes backend logic if required (eg. in Node.js)
+- Sends a response back to the browser, often including:
+
+1. HTML document (page's structure)
+2. CSS (styling rules)
+3. Other resources like images, video etc.
+4. JavaScript (dynamic behavior)
+
+6. Rendering the page:
+
+Thr browser begins rendering the page:
+
+- HTML parsing: converts HTML into a DOM (Document Object Model) tree
+- CSS Parsing: Styles the DOM elements by applying CSS rules
+- JavaScript execution: Executes any JavaScript to add interactivity or modify the DOM 
+- Rendering: Combines everything into a pixel perfect visual representation of the screen
+
+-------------------------------------------------------------------------------------------------------------------
+
+HTML:
+
+HyperText Markup Language is the standard markup language used to create and structure content on the web. It defines the elements (headings, paragraphs, images, links etc) that make up a webpage
+
+- HyperText refers to linking of resources and documents through hyperlinks
+- Markup Language uses tags to annotate and format text, making it machine readable for browsers
+
+It is not a programming language because it does not have any logic based constructs like variables, loops or conditionals. Instead, it is a declarative language used to define the structure and layout of a webpage
+
+History:
+
+- HTML was proposed by Tim Berners-Lee at CERN (European Organization for Nuclear Research)
+- It's purpose was to facilitate the sharing of documents and research among scientists via a network (the web)
+- Early versions of HTML were simple and lacked features like styling or scripting 
+
+Evolution:
+
+1. HTML (Prototype) - 1991 - Initial 18 tags introduced by Tim Berners-Lee
+2. HTML 2.0 - 1995 - Forms, tables and basic interactive elements introduced
+3. HTML 3.2 - 1997 - Added support for scripting (JavaScript), applets and stylesheets
+4. HTML 4.01 - 1999 - Focus on web accessibility and internationalization
+5. XTML 1.0 - 2000 - Stricter XML based version of HTML 4.01 
+6. HTML5 - 2014 - Introduced modern features like <video>, <audio> and <article>. Support for online storage, geolocation and webpages. Backwards compatible.
+
+CERN and HTML:
+
+Euroean Organization for Nuclear research was where HTML and WWW was born
+
+Tim Berners-Lee created HTML while working at CERN to enable scientists to: 
+
+- Share research and documents
+- Create interconnected networks of info via hyperlinks
+
+CERN made the web public in 1993, ensuring its open and free use, accelerating HTML's adoption worldwide.
+
+HTML is not a programming language because it lacks the ability to perform logical operations or manipuldate data, which are core concepts of programming languages.
+
+No logic 
+No data manipulation 
+No calculations
+No input/output 
+
+3 types of languages - Markup, scripting and programming language.
+
+REPL - Read Evaluate Print Loop (It works in interpreter languages like Python and Node.js)
+
+Stuff we learned on 7-1-25
+
+if i type ! , it will give me the entire boilerplate for html
+
+<head></head> -> It used for metadata of project. (Includes title, description, preview links, open graph (OG) tags)
+
+<title></title> -> Jo bhi ya likhte wa tab pe dikhata browser pe
+
+//Favicon:
+
+Used this website to generate OG tags 
+https://favicon.io/ 
+
+Gives a card like stuff includes title description photo 
+
+Tags:
+Includes h1-h6
+h1 main heading hai h2 subheading hai 
+
+We use units of measurements like - px,em,rem,pt 
+
+paragraph tag: 
+<p>This is a paragraph man</p>
+
+Converting text to bold and italic:
+<b>Bold text</b>
+<i>Italic text</i>
+
+!!!!!!!!!!superscript(up) and subscript(down)!!!!!!!!!!!!!!!!!!!!!!!!
+
+<p>4<sup>th</sup>September, 2004</p>
+<p>H<sub>2</sub>0</p>
+
+Line break:
+<br> //no closing tag 
+
+Horizontal line:
+<hr> //no closing tag 
+
+Abbreviations and acronyms:
+
+<p>
+<acronym title="HyperText Markup Language">
+HTML
+</acronym>
+</p>
+
+It will show me HTML with weird underline and if i hover on it it will show me the fullform.
+
+Lists:
+Ordered and Unordered
+
+<ol>
+<li>First element</li>
+</ol>
+
+<ul>
+<li>First element unordered</li>
+</ul>
+
+Links:
+
+1. Redirect to website
+2. Email link 
+3. Redirect to another webpage in the website 
+
+I learned if i type just a it will give me many options such as a:link and a:mail (first and second k liye shortcut)
+
+<a href="https://google.com">Google</a>
+<a href="mailto:saadcfi4@gmail.com">Mail me here</a>
+<a href="./target.html">Targeted webpage</a>
+
+Image, Video and Audio tags:
+
+Like a if i type img video audio it will autocomplete the tag for me 
+
+<img src="./images.jpg" height="200px" width="200px" alt="this is a cat" />
+
+!!!For video and audio its same but you have to add controls for it to work. Also no alt text
+
+Tables and forms:
+
+Tables are used in HTML to display data in tabular format, Organized into rows and columns
+
+- Basic table structure:
+A table is created using the <table> tag, and the structure typicially includes:
+
+<tr> : table row 
+<th>: table header (bold and centered by default)
+<td>: table data (regular cell content)
+
+Forms:
+
+They are used to collect user input and send it to server for processing
+
+Basic form structure:
+
+A form is created using the <form> which often contains input fields like text boxes, radio buttons, checkboxes and submit buttons 
+
+Syntax: 
+
+<form>
+<label for="Name">Name:</label>
+<input type: "text" id= "name" name= "name"
+
+<input type= "submit" value="submit">
+</form>
+
+id is for css purposes and name is to connect it with the form
+
+
+
+
+
+
+
+
