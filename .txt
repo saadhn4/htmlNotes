@@ -208,6 +208,11 @@ Syntax:
 
 id is for css purposes and name is to connect it with the form
 
+textarea in forms:
+- Opening and closing tag
+- If u want to add larger content (like description comments) , you dont use input. you use textarea
+- <textarea id="description" name="description" rows="5" cols="5" maxlength= "1000"></textarea>
+
 
 
 
