@@ -189,62 +189,6 @@ A table is created using the <table> tag, and the structure typicially includes:
 <th>: table header (bold and centered by default)
 <td>: table data (regular cell content)
 
-Forms:
-
-They are used to collect user input and send it to server for processing
-
-Basic form structure:
-
-A form is created using the <form> which often contains input fields like text boxes, radio buttons, checkboxes and submit buttons 
-
-Syntax: 
-
-<form>
-<label for="name">Name:</label>
-<input type= "text" id= "name" name= "name" />
-
-<button type="submit">Submit</button>
-</form>
-
-id is for css purposes and name is to connect it with the form
-
-textarea in forms:
-- Opening and closing tag
-- If u want to add larger content (like description comments) , you dont use input. you use textarea
-- <textarea id="description" name="description" rows="5" cols="5" maxlength= "1000"></textarea>
-
-dropdowns:
-
-<label for="hobbies">Hobbies:</label>
-<select id = "hobbies" name= "hobbies">
-<option value="cricket">cricket</option>
-<option value="football">football</option>
-
-</select>
-
-radio:
-<input type="radio" id="male" value="male" name="gender">
-<label for="male">Male:</label>
-
-<input type="radio" id="female" value="female" name="gender">
-<label for="female">Female:</label>
-
-
-!!!name is common here always , for example gender!!!!!
-!!!input type is b4 label!!!
-
-checkboxes:
-   <label>
-    <input type="checkbox" name="language" value="urdu">Urdu
-    </label> <br>
-
-    <label>
-      <input type="checkbox" name="language" value="hindi">Hindi
-      </label> <br>
-
-      <label>
-        <input type="checkbox" name="language" value="english">English
-        </label>
 
 
 
