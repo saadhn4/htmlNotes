@@ -205,6 +205,10 @@ Details at end:
 Expand kare to ye aata.
 </details>
 
+header -> nav 
+main -> pura content (sections and divs)
+footer
+
 
 
 
