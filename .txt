@@ -203,7 +203,7 @@ Syntax:
 <label for="name">Name:</label>
 <input type= "text" id= "name" name= "name" />
 
-<input type= "submit" value="submit">
+<button type="submit">Submit</button>
 </form>
 
 id is for css purposes and name is to connect it with the form
