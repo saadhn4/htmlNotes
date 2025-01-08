@@ -35,5 +35,8 @@ Characteristics:
 - Purely a structural element without any semantic value
 - Commonly uses for layout purposes like creating grids/containers
 
+header -> nav 
+main -> pura content (sections and divs)
+footer
 
 
