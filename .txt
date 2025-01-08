@@ -189,8 +189,21 @@ A table is created using the <table> tag, and the structure typicially includes:
 <th>: table header (bold and centered by default)
 <td>: table data (regular cell content)
 
+Underline tag: <u></u>
+Highlight tag: <mark></mark>
+Slashing text: <del>Slashed text</del>
 
+For Definiton lists:
+<dl>
+<dt>Definiton term</dt>
+<dd>Definiton description </dd>
+</dl>
 
+Details at end:
+<details>
+<summary>Click to expand</summary>
+Expand kare to ye aata.
+</details>
 
 
 
