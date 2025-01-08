@@ -233,6 +233,19 @@ radio:
 !!!name is common here always , for example gender!!!!!
 !!!input type is b4 label!!!
 
+checkboxes:
+   <label>
+    <input type="checkbox" name="language" value="urdu">Urdu
+    </label> <br>
+
+    <label>
+      <input type="checkbox" name="language" value="hindi">Hindi
+      </label> <br>
+
+      <label>
+        <input type="checkbox" name="language" value="english">English
+        </label>
+
 
 
 
